@@ -1,12 +1,5 @@
 # Un-hide and use this explore, or copy the joins into another explore, to get all the fully nested relationships from this view
-explore: integrated_music_chart {
-  hidden: yes
-    join: integrated_music_chart__details {
-      view_label: "Integrated Music Chart: Details"
-      sql: LEFT JOIN UNNEST(${integrated_music_chart.details}) as integrated_music_chart__details ;;
-      relationship: one_to_many
-    }
-}
+
 view: integrated_music_chart {
   sql_table_name: `wev-prod-artist-analysis.bronze_ingested.integrated_music_chart` ;;
 

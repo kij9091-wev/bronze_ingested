@@ -18,6 +18,16 @@ explore: bronze_mint_melon_chart {
     }
 }
 
+
 explore: bronze_youtube_video_comment {}
 
 explore: bronze_mint_melon_chart_proto {}
+
+explore: integrated_music_chart {
+
+  join: integrated_music_chart__details {
+    view_label: "Integrated Music Chart: Details"
+    sql: LEFT JOIN UNNEST(${integrated_music_chart.details}) as integrated_music_chart__details ;;
+    relationship: one_to_many
+  }
+}
