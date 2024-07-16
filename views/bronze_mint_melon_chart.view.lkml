@@ -81,6 +81,10 @@ view: bronze_mint_melon_chart {
     type: count
     drill_fields: [chart_name]
   }
+  measure: rank_measure {
+    type: average
+    sql: ${TABLE}.rank ;;
+  }
 }
 
 view: bronze_mint_melon_chart__details {
