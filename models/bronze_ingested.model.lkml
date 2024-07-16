@@ -21,4 +21,3 @@ explore: bronze_mint_melon_chart {
 explore: bronze_youtube_video_comment {}
 
 explore: bronze_mint_melon_chart_proto {}
-
