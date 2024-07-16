@@ -83,6 +83,10 @@ view: integrated_music_chart {
     type: count
     drill_fields: [chart_name]
   }
+  measure: rank_measure {
+    type: average
+    sql: ${TABLE}.rank ;;
+  }
 }
 
 view: integrated_music_chart__details {
